@@ -46,7 +46,7 @@ M = Handler.alphaCut(A,1)
 eigenvalues, eigenvectors = np.linalg.eig(M)
 
 #define K
-partitionSize=3
+partitionSize=4
 tempEigenValues = np.absolute(eigenvalues)
 idx = tempEigenValues.argsort()[:partitionSize][::]
 eigenValues = tempEigenValues[idx]
@@ -159,7 +159,7 @@ for p in part:
     partition.append(partTemp)
 
 
-np.savetxt('test_3.txt', partition,fmt='%r')
+np.savetxt('test_4.txt', partition,fmt='%r')
 
 
 """
